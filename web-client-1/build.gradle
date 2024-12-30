@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.nleachdev'
+version = '0.0.1-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation "org.springframework:spring-jdbc:$springVersion"
+    implementation "org.springframework.boot:spring-boot-starter-web:$springBootVersion"
+    implementation "org.springframework.boot:spring-boot-starter-cache:$springBootVersio    n"
+    implementation "de.codecentric:spring-boot-admin-starter-client:$springBootVersion"
+}
+
+test {
+    useJUnitPlatform()
+}

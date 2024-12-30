@@ -1,0 +1,15 @@
+spring:
+  boot:
+    admin:
+      client:
+        url: http://localhost:8081  # URL of the Admin Server
+        instance:
+          name: SomeCustomName
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'  # Expose all management endpoints
+server:
+  port: 8082

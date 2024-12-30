@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.nleachdev'
+version = '0.0.1-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // Spring Boot Admin Server Dependency
+    implementation "de.codecentric:spring-boot-admin-starter-server:$springBootVersion" // Use the appropriate version
+
+    // Spring Boot Starter Web (for web application)
+    implementation "org.springframework.boot:spring-boot-starter-web:$springBootVersion"
+}
+
+test {
+    useJUnitPlatform()
+}

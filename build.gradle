@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+    id 'war'
+}
+
+group = 'com.nleachdev'
+version = '0.0.1-SNAPSHOT'
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(8)
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}
